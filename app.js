@@ -39,9 +39,9 @@ setTimeout(() => {
   }
 }, 1500);
 
-copy.addEventListener("click", (e) => {
+copy.addEventListener("click", () => {
   navigator.clipboard
-    .writeText(e.target.firstElementChild.innerHTML)
+    .writeText(colorFormat.innerHTML)
     .then(() => {
       tost.classList.add("show");
       tost.innerHTML = "Successfully copied!!!"
